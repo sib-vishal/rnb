@@ -7,9 +7,9 @@
 
 				</div>
 
-				<h4 class="heading text-white">
+				<h4 class="heading text-white fontHeading mt-4 fontWeight600 ">
 					<span>RNB Global University</span><br />
-					Development Office
+					<span class="text_secondary">Development Office</span>
 				</h4>
 
 			</div>
