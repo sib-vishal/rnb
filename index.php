@@ -25,7 +25,7 @@
         <?php include 'include/header.php'; ?>
         <div class="banner-wrapper ">
             <div class="containerFull">
-                <img src="images/banner/home-banner.svg" alt="" class="img-fluid w-100" />
+                <img src="images/banner/home-banner.png" alt="" class="img-fluid w-100" />
             </div>
         </div>
         <section>
