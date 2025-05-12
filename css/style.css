@@ -1020,3 +1020,36 @@ section {
 .sdg-card .info-card .icon {
   width: 30px;
 }
+
+/* ambiton */
+.ger_section {
+  padding: 95px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url(../images/ambition/ger.png);
+}
+
+/* donate page tabs */
+.donate .nav {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.donate .nav .nav-item {
+  width: 100%;
+}
+.donate .nav .nav-item button {
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  color: black;
+  margin-right: 10px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  padding: 14px 0px;
+}
+.donate .nav-pills .nav-link.active {
+  background-color: var(--color-yellow);
+  color: black;
+  font-family: "Lato", sans-serif;
+}

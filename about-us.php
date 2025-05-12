@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>RNB GLOBAL </title>
+    <title>RNB GLOBAL | About Us </title>
     <?php include 'include/head-links.php'; ?>
     <meta property="og:url" content="<?php echo $page_url ?>">
     <meta property="og:title" content="">

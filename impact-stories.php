@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>RNB GLOBAL </title>
+    <title>RNB GLOBAL | Impact Stories </title>
     <?php include 'include/head-links.php'; ?>
     <meta property="og:url" content="<?php echo $page_url ?>">
     <meta property="og:title" content="">
@@ -633,117 +633,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="pt-0">
-            <div class="containerFull">
-                <div class="px-5">
-                    <h4 class="heading fontWeight600 text_primary text-center ">
-                        Impact Highlights
-                    </h4>
-
-                    <?php $agricultureImpactStories = [
-                        [
-                            'icon' => 'impact-helight.png',
-                            'title' => 'Introduces low-resource farming for arid regions'
-                        ],
-                        [
-                            'icon' => 'impact-helight-2.png',
-                            'title' => 'Inspires rural women to pursue agriculture-based startups'
-                        ],
-                        [
-                            'icon' => 'impact-helight-3.png',
-                            'title' => 'Generates jobs and delivers organic mushrooms to urban markets, driving economic growth'
-                        ]
-                    ];
-
-                    ?>
-                    <div class="row mt-5 imapact_highlight   ">
-                        <?php foreach ($agricultureImpactStories as $story): ?>
-                            <div class="col-md-4 mb-4  item">
-                                <div class="py-4 px-5 p">
-                                    <img src="images/icons/<?= $story['icon'] ?>" alt="Icon" style="height: 100px; ">
-                                    <p class="mt-3"><?= $story['title'] ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-
-                </div>
-        </section>
-        <section class="pt-0">
-            <div class="containerFull">
-                <div class="px-5">
-                    <div class="">
-                        <img class="img-fluid" src="images/impact-story/vk-foods.png" alt="">
-                    </div>
-                    <div class="mt-5 row  align-items-end">
-                        <div class="col-lg-4 ">
-                            <h4 class="heading fontWeight600 text_secondary">
-                                VK Foods
-                            </h4>
-
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="number_box ">
-                                02
-                            </div>
-                            <p class="mt-4">
-                                When RNB Global University alumnus Rahul Verma returned to his family’s flour mill
-                                business, he brought more than just enthusiasm—he brought innovation. Using his newly
-                                acquired business management skills not just through classroom training but also across
-                                various guest lectures and seminars, he transformed his family’s small-scale operation
-                                into a recognized brand: VK Foods.
-                            </p>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <section class="pt-0">
-            <div class="containerFull">
-                <div class="px-5">
-                    <h4 class="heading fontWeight600 text_primary text-center ">
-                        Impact Highlights
-                    </h4>
-
-                    <?php $agricultureImpactStories = [
-                        [
-                            'icon' => 'impact-helight-4.png',
-                            'title' => 'Brand Development in an otherwise unorganised market'
-                        ],
-                        [
-                            'icon' => 'impact-helight-5.png',
-                            'title' => 'Creation of a sustainable model that respects heritage while embracing new age marketing skills'
-                        ],
-                        [
-                            'icon' => 'impact-helight-6.png',
-                            'title' => 'Source of employment for local farmers and workers, strengthening the regional economy'
-                        ]
-                    ];
-
-                    ?>
-                    <div class="row mt-5 imapact_highlight   ">
-                        <?php foreach ($agricultureImpactStories as $story): ?>
-                            <div class="col-md-4 mb-4  item">
-                                <div class="py-4 px-5 p">
-                                    <img src="images/icons/<?= $story['icon'] ?>" alt="Icon" style="height: 100px; ">
-                                    <p class="mt-3"><?= $story['title'] ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-
-                </div>
-        </section>
-         -->
-
-
-
-
+    
         <section class="pt-0">
             <div class="containerFull ">
                 <div class="px-4 row justify-content-center ">
