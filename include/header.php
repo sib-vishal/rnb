@@ -9,10 +9,10 @@
 			</div>
 			<div class="menu-links">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Rural Excellence</a></li>
-					<li><a href="#">Impact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about-us.php">About</a></li>
+					<li><a href="rural-excellence.php">Rural Excellence</a></li>
+					<li><a href="impact-stories.php">Impact</a></li>
 					<li><a href="#">Ambition</a></li>
 					<li><a href="#">Donate</a></li>
 					<li><a href="#">Contact</a></li>

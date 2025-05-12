@@ -7,7 +7,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon-vinod_32x32.png" />
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.svg" />
 <link rel="canonical" href="<?php echo $page_url; ?>">
 
 <!-- preload -->

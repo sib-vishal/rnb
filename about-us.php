@@ -61,11 +61,67 @@
 
             </div>
         </section>
+        <section>
+            <div class="containerFull">
+                <div class="px-5">
+
+                    <h4 class="heading text_primary  fontWeight600 ">
+                        RNB Global University <br /> <span class="text_secondary">Development</span> Plan (UDP)
+                    </h4>
+                    <p class="col-lg-6 mt-4">
+                        Our ambitious, four-phase development plan is set to establish RNB Global University as India’s
+                        leading rural institution, capable of nurturing a thriving community of students and scholars.
+                    </p>
+
+                    <div class="row mt-5 phase-container">
+                        <?php
+                        $university_phases = [
+                            [
+                                'phase' => 'Phase 1',
+                                'title' => 'Increasing enrollment and brand recognition of the University',
+                                'icon' => 'user.png'
+                            ],
+                            [
+                                'phase' => 'Phase 2',
+                                'title' => 'Building capacity in R&D and improving the quality of education',
+                                'icon' => 'book.png'
+                            ],
+                            [
+                                'phase' => 'Phase 3',
+                                'title' => 'Upgrading the University\'s infrastructure',
+                                'icon' => 'school.png'
+                            ],
+                            [
+                                'phase' => 'Phase 4',
+                                'title' => 'Establishing global presence in the field of higher education',
+                                'icon' => 'bulb.png'
+                            ]
+                        ];
+                        ?>
+                        <?php foreach ($university_phases as $phase): ?>
+                            <div class="col-lg-3">
+                                <div class="phase-box">
+                                    <div class="phase">
+                                        <img class="" src="images/icons/<?= $phase['icon'] ?>"></img>
+                                        <h4 class="phase-title"><?= $phase['phase'] ?></h4>
+                                        <p class="mt-2"><?= $phase['title'] ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
         <section>
             <div class="containerFull">
                 <div class="px-5">
-                    <h4 class="heading text_primary fontWeight500 text-center">
+                    <h4 class="heading text_primary fontWeight600 text-center">
                         The <span class="text_secondary">UDP’s</span> Catalyst for Innovation
                     </h4>
                     <p class="col-lg-6 mx-auto text-center mt-4">
@@ -112,14 +168,14 @@
 
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid" src="images/research.png" alt="">
+                            <img class="img-fluid" src="images/about/Frame 226.png" alt="">
 
                         </div>
 
                     </div>
                     <div class="row align-items-center mt-5">
                         <div class="col-lg-7">
-                            <img class="img-fluid" src="images/research.png" alt="">
+                            <img class="img-fluid" src="images/about/Frame 224.png" alt="">
 
                         </div>
                         <div class="col-lg-5 ps-lg-5">
@@ -147,7 +203,7 @@
 
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid" src="images/research.png" alt="">
+                            <img class="img-fluid" src="images/about/Frame 223.png" alt="">
 
                         </div>
 
@@ -167,8 +223,8 @@
                     <div class="row   align-items-center">
                         <div class="col-lg-6 pe-lg-5 h-full ">
                             <div class="">
-                                <h4 class="heading fontWeight600 text_primary">
-                                    Why the Development Office was Established
+                                <h4 class="heading fontWeight600 text_primary  ">
+                                    Why the <span class="text_secondary">Development Office</span> was Established
                                 </h4>
                                 <p class="mt-4">
                                     RNB Global University is committed to building a sustainable and thriving future
@@ -183,17 +239,11 @@
 
                                 </p>
 
-                                <!-- <div class="mt-5 d-flex align-items-center gap-3">
-                                    <a href="about-us.php" class="btn_1 ">Know More</a>
-                                    <a href="about-us.php" class="btn_2 ">Donate</a>
-
-
-                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="img-box">
-                                <img src="images/img2.png" alt="" class="img-fluid w-100" />
+                                <img src="images/about/Frame 234.png" alt="" class="img-fluid w-100" />
 
                             </div>
 
@@ -207,6 +257,106 @@
 
             </div>
         </section>
+        <section>
+            <div class="containerFull">
+                <div class="px-5">
+
+                    <h4 class="heading text_primary fontWeight600">
+                        <span class="text_secondary">Functions</span> of a University Development Office
+                    </h4>
+                    <div class="mt-4">
+
+                        <?php
+                        $connection_goals = [
+                            [
+                                'title' => 'Build stronger connections',
+                                'description' => 'with all partners and stakeholders by nurturing long-term relationships',
+                                'icon' => 'link.png'
+                            ],
+                            [
+                                'title' => 'Philanthropic opportunities',
+                                'description' => 'unlocked by attracting donations, grants, and other support to advance our mission',
+                                'icon' => 'hands.png'
+                            ],
+                            [
+                                'title' => 'Strategic growth',
+                                'description' => 'to allocate funds so as to align with short-term and long-term goals',
+                                'icon' => 'chart.png'
+                            ],
+                            [
+                                'title' => 'Engage with alumni',
+                                'description' => 'by providing a platform for them to contribute to their alma mater meaningfully',
+                                'icon' => 'student.png'
+                            ]
+                        ];
+                        ?>
+
+                        <div class="goal-container">
+                            <?php foreach ($connection_goals as $goal): ?>
+                                <div class="goal-box">
+                                    <img src="images/icons/<?= $goal['icon'] ?>" alt="">
+                                    <h4 class="mt-4"><?= $goal['title'] ?></h4>
+                                    <p class="mt-2"><?= $goal['description'] ?></p>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <p class="mt-4">
+                        The RNB Global University Development Office is committed to growing the University
+                        strategically. The resultant improvement of the local economy and increase in skilled
+                        capacitated youth will directly contribute to influencing the migration of people.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="containerFull">
+                <div class="px-5">
+                    <?php $impacts = [
+                        [
+                            'title' => 'Short-term Impact',
+                            'description' => 'Increase in Gross Enrolment Rate in higher education',
+                            'icon' => 'bag.png',
+                            'color' => '#2e2e72'
+                        ],
+                        [
+                            'title' => 'Medium-term Impact',
+                            'description' => 'Skilled capacitated youth',
+                            'icon' => 'degree.png',
+                            'color' => '#ffc72c'
+                        ],
+                        [
+                            'title' => 'Long-term Impact',
+                            'description' => 'Transforming the lives of students and their families',
+                            'icon' => 'suitcase.png',
+                            'color' => '#00a6de'
+                        ]
+                    ];
+
+
+                    ?>
+
+                    <div class="impact-box mt-4">
+                        <div class="row justify-content-center">
+                            <?php foreach ($impacts as $impact): ?>
+                                <div class="col-md-4 mb-4">
+                                    <div class=" card-impact  p-4  h-100">
+                                        <img src="images/icons/<?= $impact['icon'] ?>" class="mb-3"
+                                            alt="icon">
+                                        <h5 class=" mt-3 "><?= $impact['title'] ?></h5>
+                                        <p class="mb-0 mt-3"><?= $impact['description'] ?></p>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 
         <section class="pt-0">
             <div class="containerFull">
