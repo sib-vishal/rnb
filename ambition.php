@@ -86,7 +86,9 @@
                             <div class="col-lg-6 mb-3">
                                 <div class="key-outcome ">
                                     <div class="goal-img">
-                                        <img class="w-75 mx-auto d-block" src="images/ambition/key-<?= $goal['id'] ?>.png"
+                                        <img class=" img-1 w-75 mx-auto d-block" src="images/ambition/key-<?= $goal['id'] ?>.png"
+                                            alt="">
+                                        <img class=" img-2 w-75 mx-auto d-block opacity-0" src="images/ambition/key-<?= $goal['id'] ?><?= $goal['id'] ?>.png"
                                             alt="">
 
                                     </div>

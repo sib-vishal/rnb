@@ -14,7 +14,7 @@
 					<li><a href="rural-excellence.php">Rural Excellence</a></li>
 					<li><a href="impact-stories.php">Impact</a></li>
 					<li><a href="ambition.php">Ambition</a></li>
-					<li><a href="#">Donate</a></li>
+					<li><a href="donate.php">Donate</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>

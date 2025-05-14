@@ -221,12 +221,15 @@
                 <ul class="mt-4 list_impact">
                     <?php foreach ($impactTitles as $title): ?>
                         <li>
-                            <div class="ms-4 text-box ">
-                                <?= htmlspecialchars($title) ?>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
+                            <a class="w-100 " href="impact-stories.php#<?= htmlspecialchars($title) ?>">
+
+                                <div class="ms-4 text-box ">
+                                    <?= htmlspecialchars($title) ?>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </a>
 
                         </li>
                     <?php endforeach; ?>

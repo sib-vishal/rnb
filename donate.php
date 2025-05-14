@@ -25,7 +25,7 @@
         <?php include 'include/header.php'; ?>
         <div class="banner-wrapper ">
             <div class="containerFull">
-                <img src="images/ambition/ambition.png" alt="" class="img-fluid w-100" />
+                <img src="images/donate/donate.png" alt="" class="img-fluid w-100" />
             </div>
         </div>
         <section>
@@ -59,7 +59,7 @@
         </section>
         <section class="pt-0">
             <div class="containerFull">
-                <div class="px-4">
+                <div class="px-5">
 
                     <h4 class="text_primary heading text-center  fontWeight600">
                         Why Your Support Matters
@@ -80,7 +80,7 @@
         </section>
         <section class="pt-0">
             <div class="containerFull">
-                <div class="px-4">
+                <div class="px-5 ">
                     <div class="donate">
                         <!-- Pills Navigation -->
                         <ul class="nav nav-pills mb-3 w-100" id="pills-tab" role="tablist">
@@ -108,14 +108,93 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="donors" role="tabpanel"
                                 aria-labelledby="donors-tab">
-                                <p>Content for Number of Donors goes here.</p>
+                                <h4 class="text_primary sub_heading mt-5">
+                                    Industries
+                                </h4>
+                                <div class="row mt-5">
+                                    <div class="col-lg-6">
+
+                                        <div class="chart-container">
+                                            <canvas id="donutChart1"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="data-card mt-2 ">
+                                            <h4 class="text_secondary">
+                                                HNI
+                                            </h4>
+                                            <div class="d-flex flex-column flex-grow-1  overflow-y-auto list_item">
+                                                <p>
+                                                    Anitaben K Thakkar
+                                                </p>
+                                                <p>
+                                                    Bharat Taparia
+                                                </p>
+                                                <p>
+                                                    Manish & Mamta Chandak
+
+                                                </p>
+                                                <p>
+                                                    Brij Rattan Bagri
+                                                </p>
+                                                <p>
+                                                    Anitaben K Thakkar
+                                                </p>
+                                                <p>
+                                                    Bharat Taparia
+                                                </p>
+                                                <p>
+                                                    Manish & Mamta Chandak
+
+                                                </p>
+                                                <p>
+                                                    Brij Rattan Bagri
+                                                </p>
+                                                <p>
+                                                    Bharat Taparia
+                                                </p>
+                                                <p>
+                                                    Manish & Mamta Chandak
+
+                                                </p>
+                                                <p>
+                                                    Brij Rattan Bagri
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="funds-percent" role="tabpanel"
                                 aria-labelledby="funds-percent-tab">
-                                <p>Content for Funds/Grants received (in %) goes here.</p>
+                                <h4 class="text_primary sub_heading mt-5">
+                                    Industries
+                                </h4>
+                                <div class="row mt-5">
+                                    <div class="col-lg-12">
+                                        <div class="chart-container">
+                                            <canvas id="donutChart2"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="funds-inr" role="tabpanel" aria-labelledby="funds-inr-tab">
-                                <p>Content for Funds/Grants received (INR in lakhs) goes here.</p>
+                                <h4 class="text_primary sub_heading mt-5">
+                                   Purpose of the Grant
+                                </h4>
+
+                                <div class="row justify-content-center mt-5">
+                                    <div class="col-lg-8">
+                                        <div class="chart-container fundChart">
+                                            <canvas id="fundChart"></canvas>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,8 +208,8 @@
         </section>
         <section class="pt-4">
             <div class="containerFull">
-                <div class="px-4">
-                    <h4 class="text-center heading fontWeight600 text_primary">
+                <div class="px-4 ">
+                    <h4 class="text-center heading fontWeight600 text_primary mb-5">
                         There are numerous ways you can <br /> contribute to <span class="text_secondary">our
                             mission</span>
                     </h4>
@@ -196,22 +275,30 @@
                     ?>
 
                     <?php foreach ($donation_categories as $index => $category): ?>
-                        <div class="row">
-                            <div class="col-lg-6 mb-4">
+                        <?php
+                        // Check if index is even or odd
+                        $isEven = ($index % 2 === 0);
+                        // Determine column orders
+                        $imgColOrder = $isEven ? 'order-lg-1' : 'order-lg-2';
+                        $textColOrder = $isEven ? 'order-lg-2' : 'order-lg-1';
+                        ?>
+                        <div class="row donate_mission_row align-items-center ">
+                            <div class="col-lg-7 mb-4 <?= $imgColOrder ?>">
                                 <div class="d-flex align-items-start">
-                                    <img class="img-fluid" src="images/donate/mission-1.png" alt="<?= $category['title'] ?>" />
-                                    <!-- <img src="images/donate/<?= $category['img'] ?>" alt="<?= $category['title'] ?>" /> -->
-
-
+                                    <img class="img-fluid" src="images/donate/mission-<?= $index + 1 ?>.png"
+                                        alt="<?= $category['title'] ?>" />
                                 </div>
                             </div>
-                            <div class="col-lg-6 mb-4">
-                                <div class="">
+                            <div class="col-lg-5 mb-4 <?= $textColOrder ?>">
+                                <div class="content">
+                                    <h4 class="text_secondary heading">
+                                        <?= str_pad($index + 1, 2, '0', STR_PAD_LEFT) ?>
+                                    </h4>
 
-                                    <h5 class="mb-1"><?= str_pad($index + 1, 2, '0', STR_PAD_LEFT) ?>
+                                    <h5 class="mt-2 sub_heading">
                                         <?= $category['title'] ?>
                                     </h5>
-                                    <ul class="mb-0">
+                                    <ul class="mt-4">
                                         <?php foreach ($category['list'] as $item): ?>
                                             <li><?= $item ?></li>
                                         <?php endforeach; ?>
@@ -219,8 +306,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
 
 
 
@@ -307,6 +394,75 @@
             },
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx1 = document.getElementById('donutChart1').getContext('2d');
+        new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                labels: ['A', 'B', 'C'],
+                datasets: [{
+                    data: [30, 40, 30],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }]
+            },
+            options: {
+                cutout: '50%',
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+
+        const ctx2 = document.getElementById('donutChart2').getContext('2d');
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['X', 'Y', 'Z'],
+                datasets: [{
+                    data: [50, 25, 25],
+                    backgroundColor: ['#4BC0C0', '#9966FF', '#FF9F40']
+                }]
+            },
+            options: {
+                cutout: '50%',
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+    </script>
+
+    <script>
+        const ctx3 = document.getElementById('fundChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['Principal Promoters', 'Donation', 'Grant', 'Corpus'],
+                datasets: [{
+                    data: [20, 100, 25, 40],
+                    backgroundColor: ['#001f5f', '#e6b01e', '#75c1ec', '#5a6163'],
+                    borderRadius: 8, // Rounded bars
+                    barThickness: 80
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 20
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
 
 </body>
 

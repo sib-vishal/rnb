@@ -311,7 +311,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="pt-0">
             <div class="containerFull">
                 <div class="px-5">
                     <?php $impacts = [
@@ -338,7 +338,7 @@
 
                     ?>
 
-                    <div class="impact-box mt-4">
+                    <div class="impact-box">
                         <div class="row justify-content-center">
                             <?php foreach ($impacts as $impact): ?>
                                 <div class="col-md-4 mb-4">

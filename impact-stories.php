@@ -543,67 +543,68 @@
                                     'id' => 1,
                                     'title' => 'No Poverty',
                                     'color' => '#e5243b',
+                                    'description' => 'End poverty in all its forms everywhere',
                                     
                                 ],
                                 [
                                     'id' => 2,
                                     'title' => 'Zero Hunger',
                                     'color' => '#dda63a',
-                                    
+                                    'description' => 'End hunger, achieve food security and improved nutrition and promote sustainable agriculture',
                                 ],
                                 [
                                     'id' => 3,
                                     'title' => 'Good Health & Well Being',
                                     'color' => '#4c9f38',
-                                    
+                                    'description' => 'Ensure healthy lives and promote well-being for all at all ages',
                                 ],
                                 [
                                     'id' => 4,
                                     'title' => 'Quality Education',
                                     'color' => '#c5192d',
-                                   
+                                   'description' => 'Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all',
                                 ],
                                 [
                                     'id' => 5,
                                     'title' => 'Gender Equality',
                                     'color' => '#ff3a21',
-                                   
+                                   'description' => 'Achieve gender equality and empower all women and girls',
                                 ],
                                 [
                                     'id' => 6,
                                     'title' => 'Clean Water & Sanitation',
                                     'color' => '#26bde2',
-                                    
+                                    'description' => 'Ensure availability and sustainable management of water and sanitation for all',
                                 ],
                                 [
                                     'id' => 7,
                                     'title' => 'Affordable Energy & Clean Water',
                                     'color' => '#fcc30b',
-                                    
+                                    'description' => 'Ensure access to affordable, reliable, sustainable and modern energy for all',
                                 ],
                                 [
                                     'id' => 8,
                                     'title' => 'Decent Works & Economic Growth',
                                     'color' => '#a21942',
-                                    
+                                    'description' => 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all',
                                 ],
                                 [
                                     'id' => 9,
                                     'title' => 'Industry, Innovation & Infrastructure',
                                     'color' => '#fd6925',
-                                    
+                                    'description' => 'Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation',
                                 ],
                                 [
                                     'id' => 10,
                                     'title' => 'Reduce Inequalities',
                                     'color' => '#dd1367',
-                                    
+                                    'description' => 'Reduce inequality within and among countries',
                                 ],
                                 [
                                     'id' => 11,
                                     'title' => 'Climate Action',
                                     'color' => '#3f7e44',
-                                   
+                                   'description' => 'Take urgent action to combat climate change and its impacts',
                                 ],
                             ];
                             ?>
@@ -620,6 +621,19 @@
                                                 </p>
                                                 <img  src="images/icons/sdg/sdg-<?= $goal['id'] ?>.png" class="icon mt-3 " alt="icon">
                                                 <p class=" text-white mt-3"><?= $goal['title'] ?></p>
+                                            </div>
+                                            <div class="sdg-card-hover p-5" style="background-color: <?= $goal['color'] ?>;">
+                                                 <h2 class="text-white ">
+                                                    SDG <?= $goal['id'] ?>
+                                                </h2>
+                                                <hr/>
+                                                <img  src="images/icons/sdg/sdg-<?= $goal['id'] ?>.png" class="icon mt-3 " alt="icon">
+
+                                                <p class=" text-white mt-3"><?= $goal['description'] ?></p>
+
+
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -674,6 +688,29 @@
         <?php include 'include/footer.php'; ?>
     </div>
     <?php include 'include/footer-links.php'; ?>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hash = window.location.hash;
+
+        if (hash) {
+            // Convert hash to lowercase for case-insensitive matching
+            const targetId = hash.substring(1).toLowerCase();
+
+            // Find the tab button that matches the hash
+            const tabButton = Array.from(document.querySelectorAll('.nav-link')).find(btn =>
+                btn.textContent.trim().toLowerCase() === targetId
+            );
+
+            if (tabButton) {
+                // Use Bootstrap's Tab API to show the tab
+                const tabTrigger = new bootstrap.Tab(tabButton);
+                tabTrigger.show();
+            }
+        }
+    });
+</script>
+
 
 
 </body>

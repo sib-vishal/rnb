@@ -414,6 +414,12 @@ section {
   color: var(--color-dark-blue);
   font-size: 18px;
 }
+.header .menu-links ul li a:hover {
+  padding: 10px;
+  color: var(--color-dark-blue);
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* .stricky-fixed {
   position: fixed;
@@ -577,7 +583,7 @@ section {
   object-position: center;
 }
 
-.list_impact li {
+.list_impact li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -588,13 +594,13 @@ section {
   transition: all 0.5s ease-in-out;
 }
 
-.list_impact li .text-box {
+.list_impact li a .text-box {
   color: var(--color-dark-grey);
   font-size: 25px;
   transition: all 0.5s ease-in-out;
 }
 
-.list_impact li .icon {
+.list_impact li a .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -607,14 +613,14 @@ section {
   rotate: 35deg;
 }
 
-.list_impact li:nth-child(odd):hover {
+.list_impact li:nth-child(odd):hover a {
   background-color: var(--color-dark-blue);
 }
-.list_impact li:nth-child(odd):hover .text-box {
+.list_impact li:nth-child(odd):hover a .text-box {
   color: var(--color-white);
 }
 
-.list_impact li:nth-child(even):hover {
+.list_impact li:nth-child(even):hover a {
   background-color: var(--color-yellow);
   color: var(--color-white);
 }
@@ -1021,6 +1027,21 @@ section {
   width: 30px;
 }
 
+.sdg-card:hover .sdg-card-hover {
+  opacity: 1;
+}
+
+.sdg-card-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.sdg-card-hover hr {
+  background-color: #fff;
+}
+
 /* ambiton */
 .ger_section {
   padding: 95px 0;
@@ -1052,4 +1073,77 @@ section {
   background-color: var(--color-yellow);
   color: black;
   font-family: "Lato", sans-serif;
+}
+
+.key-outcome .goal-img {
+  position: relative;
+}
+.key-outcome .goal-img .img-2 {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.key-outcome .goal-img .img-2 {
+}
+.key-outcome .goal-img .img-1 {
+  transition: all 0.3s ease-in-out;
+}
+.key-outcome:hover .goal-img .img-1 {
+  opacity: 0;
+}
+.key-outcome:hover .goal-img .img-2 {
+  opacity: 1;
+}
+
+/* donate_mission_row */
+.donate_mission_row .content {
+  padding: 50px;
+}
+.donate_mission_row .content h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.donate_mission_row .content h5 {
+  font-family: "Lato", sans-serif;
+}
+.donate_mission_row .content ul {
+  padding-left: 30px;
+  list-style: disc;
+  color: #3c4189;
+}
+.donate_mission_row .content ul li {
+  margin-top: 10px;
+}
+
+/* chart */
+.chart-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.data-card {
+  padding: 24px 28px 36px;
+  width: 400px;
+  margin: 0 auto;
+  gap: 12px;
+  height: 441px;
+  background: linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+  border: 4px solid #e9e9e9;
+  border-radius: 36px;
+  overflow-y: auto;
+}
+.list_item p {
+  padding: 10px 0;
+}
+.list_item p:nth-child(odd) {
+  padding: 10px 0;
+  background-color: var(--color-very-light-grey);
+}
+
+/* fund chart */
+.chart-container.fundChart {
+  width: 100%;
+  height: 400px;
 }
