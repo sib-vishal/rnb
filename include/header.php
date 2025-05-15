@@ -5,7 +5,6 @@
 				<a href="index.php">
 					<img src="images/logo.svg" alt="">
 				</a>
-
 			</div>
 			<div class="menu-links">
 				<ul>
@@ -15,83 +14,102 @@
 					<li><a href="impact-stories.php">Impact</a></li>
 					<li><a href="ambition.php">Ambition</a></li>
 					<li><a href="donate.php">Donate</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="contact-us.php">Contact</a></li>
 				</ul>
 			</div>
-
 		</div>
-
 	</div>
-
-
 </header>
 
-
-
-<!-- popup  -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	Launch demo modal
-</button> -->
-
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header bg_primary">
-				<h5 class="modal-title fontHeading text_primary" id="exampleModalLabel"> <span
-						class="fontWeight600 fontHeading text-white">Speak To A Our Expert</span> <br /><span
-						class="fs-6 text-white-50">100% Free Career
-						Counseling</span></h5>
-				<button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
+
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content donate-modal-content">
+			<div class="modal-header border-0 py-0">
+				<div>
+					<h5 class="modal-title sub_heading text_secondary fontWeight600">Donate.</h5>
+					<small class="" style="">"Together, we can transform the University’s
+						vision."</small>
+				</div>
+				<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+					aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<form action="" class="bg-white popup ">
+				<form>
+					<input type="number" class="form-control donate-input" placeholder="Amount*" required>
+					<input type="text" class="form-control donate-input" placeholder="Name*" required>
 
-					<div class="px-4 py-4">
-						<div class="form-floating mb-3">
-							<input type="tel" class="form-control" id="floatingName" placeholder="Name">
-							<label for="floatingName">Name</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-							<label for="floatingInput">Email address</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input type="tel" class="form-control" id="floatingPassword" placeholder="Phone No.">
-							<label for="floatingPassword">Phone No.</label>
-						</div>
-						<div class="form-floating">
-							<textarea class="form-control" placeholder="Leave a message here" style="height: 100px"
-								id="floatingTextarea"></textarea>
-							<label for="floatingTextarea">Message</label>
-						</div>
-						<button class="btn btn_6 fontHeading w-100 py-3 mt-3  " type="submit">
-							Speak To A Consultant
-						</button>
+					<div class="d-flex gap-2">
+						<input type="email" class="form-control donate-input" placeholder="Email*" required>
+						<input type="tel" class="form-control donate-input" placeholder="Phone*" required>
 					</div>
 
-				</form>
+					<textarea class="form-control donate-input" placeholder="Address*" rows="2" required></textarea>
 
+					<div class="d-flex gap-2">
+						<input type="text" class="form-control donate-input" placeholder="Pincode*" required>
+						<input type="text" class="form-control donate-input" placeholder="PAN number*" required>
+					</div>
+
+					<select class="form-select donate-input">
+						<option selected disabled>Donate Once</option>
+						<option>Monthly</option>
+					</select>
+
+					<input type="text" class="form-control donate-input"
+						placeholder="How would you like your contribution to be used?">
+
+					<button type="submit" class="btn_2 d-block w-100 py-2">Submit</button>
+				</form>
 			</div>
-			<!-- <div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			</div> -->
+		</div>
+	</div>
+</div>
+
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content p-4 text-white" style="background-color: #00205B; border-radius: 16px;">
+			<div class="text-center mb-3">
+				<div
+					style="width: 64px; height: 64px; margin: 0 auto; background-color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+					<svg width="65" height="65" fill="green" viewBox="0 0 16 16">
+						<path
+							d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM7 11.207l5.354-5.353-.708-.708L7 9.793 4.354 7.146l-.708.708L7 11.207z" />
+					</svg>
+				</div>
+			</div>
+			<h5 class="text-center fw-bold text-white">Thank You for Your Support!</h5>
+			<p class="text-center text_blue_light mb-3 mt-4" style="font-size: 0.9rem; color:#6CB2E2">
+				Your donation has been successfully processed. Your generosity helps us continue our work and make a
+				meaningful impact.
+			</p>
+			<div class="text-start text-white mb-3">
+				<strong>Next Steps:</strong>
+				<ul class="ps-3 mt-2" style="font-size: 0.85rem; list-style:disc;">
+					<li class="mt-2">A confirmation email with the details of your donation has been sent to your inbox.</li>
+					<li class="mt-2">Your support makes a difference! Stay connected with us for updates.</li>
+					<li class="mt-2">Need assistance? Contact our support team [here].</li>
+				</ul>
+			</div>
+			<div class="d-flex justify-content-center mt-4">
+				<button class="btn btn-light rounded-pill px-5" data-bs-dismiss="modal">Back</button>
+				<a href="#" class="btn btn-warning rounded-pill px-4 ms-2">View Receipt</a>
+			</div>
 		</div>
 	</div>
 </div>
 
 
 
-<!-- <div class="whatChat">
-	<a target="_blank" href="https://api.whatsapp.com/send?phone=910123456789&amp;text=Hi">
-		
-		<picture>
-			<source srcset="images/icons/whatsapp.webp" type="image/webp">
-			<img src="images/icons/whatsapp.webp">
-		</picture>
-	</a>
-</div> -->
+
+
+
+
+<!-- donate button -->
+<a href="#" class="donate-button" data-bs-toggle="modal" data-bs-target="#successModal">Donate</a>
 
 
 <div class="cursor"></div>

@@ -401,10 +401,10 @@
         new Chart(ctx1, {
             type: 'doughnut',
             data: {
-                labels: ['A', 'B', 'C'],
+                labels: ['Manufacturing', 'Hin', 'C'],
                 datasets: [{
-                    data: [30, 40, 30],
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                    data: [16, 45, 30],
+                    backgroundColor: ['#ffca35', '#001f5b', '#1c63a6']
                 }]
             },
             options: {
@@ -417,10 +417,10 @@
         new Chart(ctx2, {
             type: 'doughnut',
             data: {
-                labels: ['X', 'Y', 'Z'],
+                labels: ['Philanthropy', 'Infrestructure & Construction', 'Manufacturing','Hin'],
                 datasets: [{
-                    data: [50, 25, 25],
-                    backgroundColor: ['#4BC0C0', '#9966FF', '#FF9F40']
+                    data: [38.0, 27.3,10.4,8],
+                    backgroundColor: ['#ffca35', 'green', '#001f5b','#31356c',]
                 }]
             },
             options: {
